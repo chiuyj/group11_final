@@ -1,0 +1,319 @@
+/* For All */
+
+  /* Let "width" take "border" and "padding" into calculation */
+  * {
+      box-sizing: border-box;
+  }
+
+  /* Remove the space between the browser window and the body */
+  body {
+      margin: 0;
+  }
+
+
+  /* Main Style Sheet */
+
+  /* Navigation Bar */
+  .nav {
+      background-color: lightblue;
+      color: white;
+      border: 5px solid white;
+  }
+
+  /* Footer */
+  .footer {
+      background-color: lightblue;
+      color: white;
+      border: 5px solid white;
+  }
+
+  /* For mobile phones: */
+  [class*="col-"] {
+      width: 100%;
+      float: left;
+      padding: 15px;
+      /*border: 5px solid black;*/
+  }
+  /* Hide Something */
+  .hidden-when-small {display: none;}
+
+  @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+      /* Show Everything */
+      .hidden-when-small {display: block;}
+  }
+
+  /* Border Setting */
+  [class*="col-"] {
+      float: left;
+      padding: 15px;
+      /*border: 5px solid black;*/
+  }
+
+  /* Fill out the remaining space of each row */
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+/* Buttons */
+    
+  /*首頁和最後兩頁*/
+  .btn {
+    width: 200px;
+    background-color: #FFD51B;
+    border: black solid 5px;
+    padding: 2px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+  }
+  .btn:hover {
+    background-color: whitesmoke;
+  }
+
+  /* for questions */
+  #button {
+    background-color: bisque;
+    width: 120px;
+    margin:10px;    
+    text-align: center;
+  }
+  #button:hover {
+    background-color: whitesmoke;
+  }
+
+  /* for next and result */
+  .next{
+    width: 100px; 
+    background-color: #FFD51B;
+    border: black solid 5px;
+    padding: 5px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 47%;
+  }
+  .next:hover {
+    background-color: whitesmoke;
+  }
+
+  /* link to website */
+
+  .fake-box:hover {
+    width: 200px; 
+    height: 200px; 
+    border:black solid 5px;
+  }
+
+body {
+  width:1450px;
+  height:700px;
+  background-color: antiquewhite;
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+}
+
+/* Page 1 */
+  .title {
+    width: 500px;
+    height: 150px;
+    background-color: #FFD51B;
+    padding: 5px;
+    margin-top: 10px; 
+    margin-bottom: -50px;
+    border: solid 10px;
+    border-color: black;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+  }
+
+/* Page 2 */
+  #qs1 {
+      text-align: center;
+      padding-top: 120px;
+      padding-left: 50px;   
+  }
+
+  #flex1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: space-around;
+      height: 120px;
+      padding-left: 50px;    
+  }
+
+/* Page 3 */
+  #qs2 {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 50px;   
+  }
+
+  #flex2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: space-around;
+      height: 180px;
+      padding-top: 40px;  
+  }
+
+/* Page 4 */
+  #qs3 {
+      text-align: center;
+      padding-top: 230px;
+  }
+
+  #flex3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: space-around;
+      height: 120px;
+  }
+
+/* Page 5 */
+
+  /*right section*/
+    .result_title{
+      width: 200px; 
+      background-color: #FFD51B;
+      border: black solid 5px;
+      text-align: center;
+    }
+
+    .result_pic{
+      margin-top: -10px;
+    }
+
+    .result_content{
+      border: 5px solid black;
+      height: 350px;
+      padding: 30px;
+      text-align: center;
+      font-size: 30px;
+      margin: 20px 0px 20px 0px;
+    }
+    .tryagain{
+      background-color: #FFD51B;
+      text-align: center;
+      border: black solid 5px;
+      font-size: 20px;
+      font-family: "Lucida Console", Courier, monospace;
+      width:150px; 
+      margin: 20px 0px 20px 0px;
+    }
+    .tryagain:hover {
+      background-color: whitesmoke;
+    }
+
+  /*left section*/
+    .square{
+      margin-top: 87px;
+      padding: 10px 0px 0px 0px;
+      position: relative;
+      left: 52px;
+      height: 500px;
+      border: 5px solid black;
+    }
+
+    .pie{
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+    }
+
+    .click{
+      background-color: tomato;
+      border: black solid 3px;
+      width:230px; 
+      text-align: center;
+      
+    }
+    .click:hover {
+      background-color: whitesmoke;
+    }
+
+/* Page 6 - Dog */
+  /* Menu */
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+      }
+      
+      .menu li {
+        width: 100px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        background-color: lightblue;
+        color: white;
+      }
+  /* Table */
+      table, th, td{
+        text-align: center;
+        padding: 5px;
+        border: 1px solid white;
+        background-color: lightblue;
+      }
+      th, td{
+        padding-top: 5px;
+      }
+      td{
+        background-color: white;
+        white-space: nowrap;
+      }
+
+/* Page 7 - Cat */ 
+  /* Menu */
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+      }
+      
+      .menu li {
+        padding: 8px;
+        font-size: 25px;
+        background-color: lightblue;
+        color: white;
+      }
+      
+      .menu li2 {
+        padding: 8px;
+        font-size: 20px;
+        background-color: blue;
+        color: white;
+      }
+  /* Table */
+      table, th, td{
+        text-align: center;
+        border: 1px solid white;
+        font-size: 20px;
+      }
+      td{
+        width: 120px;
+      }
